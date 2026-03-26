@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Quipd</title>
+<style>
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/dm-sans-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/dm-sans-latin-500-normal.woff2') format('woff2');
+}
+</style>
+<style>
+:root { --sage: #5A6B5A; --sage-light: #B5CBAA; --sage-50: #EFF3EA; --paper: #FDFCF9; --cream: #F5F3ED; --ink: #2C2C2A; --muted: #9C9A92; --terra: #C97B6B; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+header { padding: 28px 48px; border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
+header a { font-size: 18px; font-weight: 500; color: var(--ink); text-decoration: none; }
+header a .dot { color: var(--sage); }
+header nav a { font-size: 14px; color: var(--muted); margin-left: 24px; text-decoration: none; }
+header nav a:hover { color: var(--ink); }
+main { max-width: 640px; margin: 0 auto; padding: 64px 24px 120px; }
+h1 { font-size: 32px; font-weight: 500; margin-bottom: 8px; letter-spacing: -0.5px; }
+.intro { font-size: 15px; color: var(--muted); margin-bottom: 48px; line-height: 1.6; }
+h2 { font-size: 18px; font-weight: 500; margin: 48px 0 20px; padding-bottom: 8px; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.faq { margin-bottom: 0; }
+.faq-item { border-bottom: 1px solid rgba(0,0,0,0.06); }
+.faq-q { padding: 16px 0; font-size: 15px; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color 0.2s; }
+.faq-q:hover { color: var(--sage); }
+.faq-arrow { font-size: 18px; color: var(--muted); transition: transform 0.2s; flex-shrink: 0; }
+.faq-item.open .faq-arrow { transform: rotate(45deg); }
+.faq-a { display: none; padding: 0 0 16px; font-size: 14px; color: #4A4A48; line-height: 1.7; }
+.faq-item.open .faq-a { display: block; }
+
+.contact-card {
+  margin-top: 48px; padding: 32px; border-radius: 16px; background: var(--cream);
+  text-align: center;
+}
+.contact-card h3 { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.contact-card p { font-size: 14px; color: var(--muted); margin-bottom: 20px; line-height: 1.6; }
+.contact-email {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 28px; border-radius: 50px; background: var(--sage); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none; transition: transform 0.2s, background 0.2s;
+}
+.contact-email:hover { transform: translateY(-1px); background: #4D5F4D; }
+.contact-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
+
+footer { padding: 32px 48px; text-align: center; font-size: 13px; color: var(--muted); border-top: 1px solid rgba(0,0,0,0.06); }
+footer a { color: var(--sage); text-decoration: none; }
+@media (max-width: 600px) { header { padding: 20px 24px; } header nav a { margin-left: 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <a href="/">quipd<span class="dot">.</span></a>
+  <nav><a href="/">Home</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="intro">Can't find what you need? Scroll to the bottom to email us. We usually respond within 24 hours.</p>
+
+<h2>Getting started</h2>
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">What is Quipd? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Quipd is a daily creative writing app. Every day, one word appears. You write exactly six words using it. After you submit, you can see how everyone else used the same word. The most-hearted response breeds tomorrow's word, creating an endless chain.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Do I need an account? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">No. Quipd uses an anonymous device token — a random ID stored on your device. You don't need to sign up, log in, or provide any personal information. Just open the app and start writing.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">When does the word change? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">A new word appears every day at midnight UTC. Depending on your timezone, this might be early morning or late evening. The app shows a countdown timer so you always know when the next word arrives.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Why can't I see other responses? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">You need to write your own six words first. This is by design — everyone contributes before consuming. Once you submit your response, the reveal unlocks and you can browse what everyone else wrote.</div>
+  </div>
+</div>
+
+<h2>Writing and responses</h2>
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Can I edit my response after submitting? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">No. Once submitted, your six words are final. This is intentional — it encourages you to think carefully before sharing. You get one response per day.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Do I have to use today's word? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Yes. Your six-word response must include today's word. The app checks for this before allowing you to submit.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Why was my response blocked? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Quipd has an automated profanity filter that checks for inappropriate language before you submit. The filter detects common profanity, slurs, and attempts to bypass filtering using character substitutions (like using numbers for letters). If your response is blocked, you'll see a message and can revise it. The filter runs locally on your device — blocked content is never sent to our servers.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What happens to my responses? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Your responses are visible to all users for 48 hours, then they're automatically deleted. The only thing that persists is the daily word chain — if your response wins (most hearts), the word picked from it becomes tomorrow's word and your response is preserved as the source.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How is tomorrow's word chosen? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">At midnight UTC, our automated system finds today's most-hearted response. It picks the most interesting word from that response — excluding common words like "the", "and", "is", as well as short words and the current day's word. The algorithm favours longer, less common words. This becomes tomorrow's word, and the community shapes the chain without realising it.</div>
+  </div>
+</div>
+
+<h2>Hearts and the chain</h2>
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">How do hearts work? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Tap the heart on any response you like. You can heart as many responses as you want, but only once per response. Hearts determine which response wins — the most-hearted response breeds tomorrow's word.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What is the chain? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">The chain is the history of every daily word since Quipd launched. Each word came from the previous day's winning response. Over time, it forms a collective poem: morning → light → carried → silence → hidden → ... You can explore the chain in the Chain tab.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can I see the full chain history? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Free users can see the last 7 days of the chain. Quipd+ unlocks the complete chain history back to Day 1.</div>
+  </div>
+</div>
+
+<h2>Quipd+ and purchases</h2>
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">What does Quipd+ include? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Quipd+ is a one-time purchase ($1.99 USD, price may vary by region) that includes: no advertisements ever, full chain history back to Day 1, unlimited response browsing (free users see the first few), and custom share card themes (multiple colour options when sharing responses).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Is Quipd+ a subscription? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">No. Quipd+ is a one-time purchase. You pay once and keep it forever. No recurring charges.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What is the Tip Jar? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">The Tip Jar lets you support Quipd's development with optional tips of $0.99, $2.99, or $4.99 USD. Tips don't unlock any features — they're just a way to say thanks if you enjoy the app. Tips are non-refundable.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How do I restore my purchase? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Go to the You tab → Settings → Restore Purchases. This uses your Apple ID to verify your purchase. Make sure you're signed into the same Apple ID you used to buy Quipd+.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How do I request a refund? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Refunds are handled by Apple. Go to reportaproblem.apple.com, sign in with your Apple ID, find the Quipd purchase, and request a refund. We don't have access to process refunds directly.</div>
+  </div>
+</div>
+
+<h2>Reporting and safety</h2>
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">How do I report an inappropriate response? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Tap and hold (long-press) any response in the feed, then select "Report." Choose a reason and submit. Responses with 3 or more reports are automatically hidden from view. We review hidden content and may permanently remove it or restore it.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How do I block someone? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Long-press any response and select "Block this person." All responses from that user will be hidden from your feed. Blocks are one-way (they can still see your responses), stored on your device, and private — the other user is not notified.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Why was my response removed? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Responses may be removed if they receive 3 or more reports from other users or if they violate our content guidelines (hate speech, threats, harassment, spam, sexually explicit content). You won't receive a notification when your response is hidden or removed. If you believe your response was removed in error, contact us via email to appeal.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What happens if I repeatedly violate the guidelines? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Repeated violations result in escalating consequences: first violation is content removal with no further action; second violation includes a warning; third violation results in a 7-day submission block; subsequent violations may result in a permanent block. If you believe you were blocked in error, you can appeal by emailing support.</div>
+  </div>
+</div>
+
+<h2>Technical</h2>
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">What devices are supported? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Quipd requires iOS 17.0 or iPadOS 17.0 or later. It works on iPhone and iPad. The iPad version features an adaptive layout — sidebar navigation in landscape, single column in portrait, with larger fonts and multi-column grids optimised for the larger screen.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Does Quipd work offline? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">You can view today's word and your cached responses offline, but submitting a new response and loading the feed requires an internet connection. The app will show an "Offline mode" banner when you're disconnected.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">I switched phones. Can I transfer my streak? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Streaks are tied to your anonymous device token, which is stored locally on your device. If you switch phones, your streak will reset. We're exploring ways to preserve streaks across devices in a future update. Your Quipd+ purchase can be restored on your new device using Restore Purchases.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Why do I see an ad after submitting? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Free users see one interstitial ad per day, shown after submitting a response. This helps support Quipd's development. The ad appears for a few seconds before showing you other responses. Quipd+ removes all ads.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How do I report a bug? <span class="faq-arrow">+</span></div>
+    <div class="faq-a">Email us at support@quipd.app with a description of the issue. Please include your device model (e.g., iPhone 15), iOS version (e.g., iOS 17.4), and steps to reproduce the bug if possible. Screenshots are helpful too.</div>
+  </div>
+</div>
+
+<div class="contact-card">
+  <h3>Still need help?</h3>
+  <p>We read every message and usually respond within 24 hours.</p>
+  <a href="mailto:support@quipd.app" class="contact-email">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4l6 4 6-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+    support@quipd.app
+  </a>
+  <p class="contact-note">Please include your device model and iOS version if reporting a bug.</p>
+</div>
+
+</main>
+<footer>quipd<span style="color:var(--sage)">.</span> &nbsp;&middot;&nbsp; <a href="/privacy/">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms/">Terms</a> &nbsp;&middot;&nbsp; <a href="/support/">Support</a></footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    // Close all in same section
+    item.parentElement.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    // Toggle clicked
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

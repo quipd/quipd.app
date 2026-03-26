@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Quipd</title>
+<style>
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/dm-sans-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/dm-sans-latin-500-normal.woff2') format('woff2');
+}
+</style>
+<style>
+:root { --sage: #5A6B5A; --sage-light: #B5CBAA; --paper: #FDFCF9; --cream: #F5F3ED; --ink: #2C2C2A; --muted: #9C9A92; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+header { padding: 28px 48px; border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
+header a { font-size: 18px; font-weight: 500; color: var(--ink); text-decoration: none; }
+header a .dot { color: var(--sage); }
+header nav a { font-size: 14px; color: var(--muted); margin-left: 24px; }
+header nav a:hover { color: var(--ink); }
+main { max-width: 640px; margin: 0 auto; padding: 64px 24px 120px; }
+h1 { font-size: 32px; font-weight: 500; margin-bottom: 8px; letter-spacing: -0.5px; }
+.updated { font-size: 13px; color: var(--muted); margin-bottom: 48px; }
+h2 { font-size: 18px; font-weight: 500; margin: 36px 0 12px; }
+p { font-size: 15px; line-height: 1.8; color: #4A4A48; margin-bottom: 16px; }
+ul { font-size: 15px; line-height: 1.8; color: #4A4A48; margin-bottom: 16px; margin-left: 24px; }
+li { margin-bottom: 8px; }
+footer { padding: 32px 48px; text-align: center; font-size: 13px; color: var(--muted); border-top: 1px solid rgba(0,0,0,0.06); }
+footer a { color: var(--sage); text-decoration: none; }
+@media (max-width: 600px) { header { padding: 20px 24px; } header nav a { margin-left: 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <a href="/">quipd<span class="dot">.</span></a>
+  <nav><a href="/">Home</a><a href="/terms/">Terms</a><a href="/support/">Support</a></nav>
+</header>
+<main>
+<h1>Privacy policy</h1>
+<p class="updated">Last updated: March 2026</p>
+
+<h2>Our commitment</h2>
+<p>Quipd is designed with privacy in mind. We collect the minimum data necessary to operate and do not require accounts, logins, or personal information.</p>
+
+<h2>What we collect</h2>
+<p>When you submit a response, we store:</p>
+<ul>
+  <li>Your six-word text</li>
+  <li>The daily word it responds to</li>
+  <li>The date of submission</li>
+  <li>A heart count</li>
+  <li>An anonymous device token (a random UUID)</li>
+</ul>
+<p>We do <strong>not</strong> collect:</p>
+<ul>
+  <li>Your name, email, or phone number</li>
+  <li>Your Apple ID or iCloud account</li>
+  <li>Your location</li>
+  <li>Your device model or operating system version</li>
+  <li>Your IP address (though Apple CloudKit may log IPs for security)</li>
+  <li>The Apple Identifier for Advertisers (IDFA)</li>
+</ul>
+
+<h2>Anonymous device token</h2>
+<p>Your device token is a random identifier (UUID) created the first time you use the app. It serves two purposes: preventing duplicate submissions and preventing duplicate hearts. The token is:</p>
+<ul>
+  <li>Generated randomly on your device</li>
+  <li>Stored locally in your device's UserDefaults</li>
+  <li>Stored in CloudKit alongside your responses</li>
+  <li>Not linked to your Apple ID, iCloud account, or any other identity</li>
+  <li>Never shared with third parties other than Apple CloudKit</li>
+</ul>
+<p>If you uninstall and reinstall the app, a new token is generated. Your previous responses will remain in CloudKit but will no longer be associated with your device.</p>
+
+<h2>Content filtering</h2>
+<p>Quipd uses an automated profanity filter that scans your response text before submission. This filtering happens locally on your device. No data about filtered content is transmitted or logged.</p>
+
+<h2>CloudKit storage</h2>
+<p>All data is stored in Apple CloudKit (container: iCloud.app.quipd.Quipd), a cloud database service operated by Apple Inc. We use CloudKit's public database, which means:</p>
+<ul>
+  <li>Data may be stored in Apple data centres in the United States or other regions</li>
+  <li>Apple handles all encryption in transit and at rest</li>
+  <li>Apple's security standards and infrastructure protections apply</li>
+  <li>We do not operate our own servers</li>
+</ul>
+<p>For details on how Apple handles CloudKit data, see <a href="https://www.apple.com/legal/privacy/" style="color:var(--sage)">Apple's Privacy Policy</a>.</p>
+
+<h2>Data retention</h2>
+<p>Quipd retains data as follows:</p>
+<ul>
+  <li><strong>Non-winning responses:</strong> Automatically deleted after 48 hours</li>
+  <li><strong>Winning responses:</strong> Preserved indefinitely as part of the word chain history (the response text, word, and heart count are kept; no personal data is included)</li>
+  <li><strong>Hearts:</strong> Deleted when the associated response is deleted</li>
+  <li><strong>Word chain history:</strong> Kept indefinitely (contains words and winning response text only)</li>
+  <li><strong>Device token in CloudKit:</strong> Retained as long as associated responses exist</li>
+</ul>
+
+<h2>Advertising</h2>
+<p>The free version of Quipd shows one interstitial advertisement after you submit a response each day. Ads are provided by Google AdMob. Google may collect:</p>
+<ul>
+  <li>Device identifiers</li>
+  <li>IP address</li>
+  <li>General usage data</li>
+</ul>
+<p>This data is used by Google for ad delivery and measurement. You can opt out of personalised advertising in iOS Settings > Privacy & Security > Apple Advertising. For more information, see <a href="https://policies.google.com/privacy" style="color:var(--sage)">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" style="color:var(--sage)">How Google uses data</a>.</p>
+<p>Quipd+ users see no advertisements and no data is shared with Google AdMob.</p>
+
+<h2>Analytics</h2>
+<p>We use Apple's built-in App Store Connect analytics to understand aggregate usage patterns such as installs, sessions, and retention. This data is anonymised and aggregated by Apple. We do not use any third-party analytics SDKs other than Google AdMob.</p>
+
+<h2>Children's privacy</h2>
+<p>Quipd is rated 12+ on the App Store. We do not knowingly collect data from children under 13, in compliance with the Children's Online Privacy Protection Act (COPPA). If you believe a child under 13 has used the app, please contact us at <a href="mailto:support@quipd.app" style="color:var(--sage)">support@quipd.app</a> and we will address it promptly.</p>
+
+<h2>Your rights</h2>
+<p>Depending on your location, you may have rights under privacy laws such as GDPR (EU) or CCPA (California). Here's how we address common requests:</p>
+<ul>
+  <li><strong>Right to know:</strong> This policy describes all data we collect</li>
+  <li><strong>Right to access:</strong> Your responses are visible to you in the app while they exist</li>
+  <li><strong>Right to delete:</strong> Non-winning responses are automatically deleted after 48 hours. To delete your device token and disassociate from your responses, uninstall and reinstall the app</li>
+  <li><strong>Right to opt out of sale:</strong> We do not sell personal data</li>
+</ul>
+<p>Winning responses that become part of the word chain cannot be deleted as they contain no personal information and are integral to the service. If you have concerns, contact us at <a href="mailto:support@quipd.app" style="color:var(--sage)">support@quipd.app</a>.</p>
+
+<h2>Data security</h2>
+<p>We rely on Apple CloudKit's security infrastructure, which includes encryption in transit (TLS) and at rest. We do not store sensitive data and do not have access to Apple's infrastructure security measures directly.</p>
+
+<h2>Data breach notification</h2>
+<p>In the unlikely event of unauthorised access to CloudKit data, we will notify affected users via the app and relevant authorities as required by applicable law within 72 hours of becoming aware of the breach.</p>
+
+<h2>Third-party services</h2>
+<p>Quipd uses the following third-party services:</p>
+<ul>
+  <li><strong>Apple CloudKit:</strong> Data storage — <a href="https://www.apple.com/legal/privacy/" style="color:var(--sage)">Privacy Policy</a></li>
+  <li><strong>Google AdMob:</strong> Advertising (free users only) — <a href="https://policies.google.com/privacy" style="color:var(--sage)">Privacy Policy</a></li>
+  <li><strong>Apple App Store:</strong> Distribution and purchases — <a href="https://www.apple.com/legal/privacy/" style="color:var(--sage)">Privacy Policy</a></li>
+</ul>
+
+<h2>International transfers</h2>
+<p>Data stored in Apple CloudKit may be transferred to and processed in countries outside your country of residence, including the United States. Apple provides appropriate safeguards for such transfers in accordance with applicable law.</p>
+
+<h2>Changes to this policy</h2>
+<p>We may update this policy from time to time. Material changes will be communicated via the app at least 14 days before taking effect. The current version is always available at quipd.app/privacy.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy? Email <a href="mailto:support@quipd.app" style="color:var(--sage)">support@quipd.app</a>.</p>
+
+</main>
+<footer>quipd<span style="color:var(--sage)">.</span> &nbsp;&middot;&nbsp; <a href="/privacy/">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms/">Terms</a> &nbsp;&middot;&nbsp; <a href="mailto:support@quipd.app">Support</a></footer>
+</body>
+</html>
