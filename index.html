@@ -282,7 +282,7 @@ footer a:hover { color: #fff; }
   text-align: center; max-width: 380px; width: 100%;
   animation: scaleIn 0.3s ease-out;
 }
-.share-card-day {
+.share-card-date {
   font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--sage);
   letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;
 }
@@ -483,7 +483,7 @@ footer a:hover { color: #fff; }
 <div class="share-overlay" id="shareOverlay">
   <button class="share-close" id="shareClose">&times;</button>
   <div class="share-card">
-    <div class="share-card-day" id="share-day">Day 247</div>
+    <div class="share-card-date" id="share-date">Mar 27</div>
     <div class="share-card-word" id="share-word">Today's word: hidden</div>
     <div class="share-card-text" id="share-text">"The hidden door opened both ways."</div>
     <div class="share-card-meta"><span class="heart">&#9829;</span> <span id="share-hearts">203</span></div>
@@ -538,12 +538,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = params.get("text");
     const word = params.get("word");
     if (text && word) {
-      const day = params.get("day");
-      if (day) {
-        document.getElementById("share-day").textContent = "Day " + day;
-      } else {
-        document.getElementById("share-day").style.display = "none";
-      }
+      // Format today's date as "Mar 27"
+      const today = new Date();
+      const dateStr = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      document.getElementById("share-date").textContent = dateStr;
       document.getElementById("share-word").textContent = "Today's word: " + word;
       document.getElementById("share-text").textContent = '"' + text + '"';
       document.getElementById("share-hearts").textContent = params.get("hearts") || "";
