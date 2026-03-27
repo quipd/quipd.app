@@ -130,7 +130,7 @@ body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); 
 .hero-headline em { font-style: normal; color: var(--sage-light); }
 .hero-sub {
   font-size: clamp(16px, 2.5vw, 20px); color: var(--muted-dark); line-height: 1.6;
-  margin-bottom: 20px; white-space: nowrap;
+  margin-bottom: 20px;
   opacity: 0; animation: fadeUp 0.8s ease-out 0.35s forwards;
 }
 .hero-tagline {
@@ -326,6 +326,7 @@ footer a:hover { color: #fff; }
 @media (max-width: 768px) {
   .hero-top { padding: 20px 24px; }
   .hero-nav a:not(.hero-nav-cta) { display: none; }
+  .hero-cta-row { margin-bottom: 24px; }
   .hero-bottom { padding: 24px; gap: 32px; }
   .showcase { padding: 64px 24px; }
   .showcase-word-row { flex-direction: column; gap: 8px; }
