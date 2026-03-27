@@ -491,7 +491,7 @@ footer a:hover { color: #fff; }
 <div class="share-overlay" id="shareOverlay">
   <button class="share-close" id="shareClose">&times;</button>
   <div class="share-card">
-    <div class="share-card-date" id="share-date">Mar 27</div>
+    <div class="share-card-date" id="share-date">Day 1</div>
     <div class="share-card-word" id="share-word">Today's word: hidden</div>
     <div class="share-card-text" id="share-text">"The hidden door opened both ways."</div>
     <div class="share-card-meta"><span class="heart">&#9829;</span> <span id="share-hearts">203</span></div>
@@ -550,10 +550,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = params.get("text");
     const word = params.get("word");
     if (text && word) {
-      // Format today's date as "Mar 27"
-      const today = new Date();
-      const dateStr = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      document.getElementById("share-date").textContent = dateStr;
+      const day = params.get("day") || "1";
+      document.getElementById("share-date").textContent = "Day " + day;
       document.getElementById("share-word").textContent = "Today's word: " + word;
       document.getElementById("share-text").textContent = '"' + text + '"';
       document.getElementById("share-hearts").textContent = params.get("hearts") || "";
