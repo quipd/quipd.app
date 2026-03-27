@@ -555,6 +555,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("share-word").textContent = "Today's word: " + word;
       document.getElementById("share-text").textContent = '"' + text + '"';
       document.getElementById("share-hearts").textContent = params.get("hearts") || "";
+      history.replaceState(null, "", "/");
       overlay.classList.add("active");
     }
   }
