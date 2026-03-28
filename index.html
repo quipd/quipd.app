@@ -416,7 +416,7 @@ footer a:hover { color: #fff; }
         <div class="how-desc">Every day at <span class="tip" data-tip="Midnight UTC / GMT">midnight</span>, a new word drops. It wasn't chosen by a person — it emerged from yesterday's most-loved response. The community writes its own prompts, without knowing it.</div>
       </div>
       <div class="how-visual">
-        <div class="how-visual-word" id="how-word">hidden</div>
+        <div class="how-visual-word" id="how-word">bloom</div>
       </div>
     </div>
   </section>
@@ -425,7 +425,7 @@ footer a:hover { color: #fff; }
     <div class="how-inner reveal">
       <div class="how-visual">
         <div>
-          <div class="how-visual-quip">"The <span class="hl">hidden</span> door<br>opened both ways."</div>
+          <div class="how-visual-quip">"Ideas <span class="hl">bloom</span> best<br>when shared freely."</div>
           <div class="how-visual-hearts">
             <div class="how-visual-heart"><span class="h">&#9829;</span> 203</div>
             <div class="how-visual-heart" style="color:rgba(255,255,255,0.3)">4h ago</div>
@@ -452,7 +452,7 @@ footer a:hover { color: #fff; }
           morning &rarr; light &rarr; carried<br>
           &rarr; silence &rarr; empty &rarr; music<br>
           &rarr; forgotten &rarr; bridge &rarr; winter<br>
-          &rarr; candle &rarr; whisper &rarr; <span class="current">hidden</span><br>
+          &rarr; candle &rarr; whisper &rarr; <span class="current">bloom</span><br>
           &rarr; ?
         </div>
       </div>
@@ -464,7 +464,7 @@ footer a:hover { color: #fff; }
 <section class="chain-section reveal">
   <div class="section-label">The chain so far</div>
   <div class="chain-display" id="live-chain">
-    ... &rarr; candle &rarr; whisper &rarr; glass &rarr; shatter &rarr; peace &rarr; drift &rarr; anchor &rarr; rust &rarr; bloom &rarr; petal &rarr; rain &rarr; roof &rarr; stranger &rarr; door &rarr; threshold &rarr; brave &rarr; quiet &rarr; corner &rarr; <span class="current">hidden</span> &rarr; ?
+    ... &rarr; candle &rarr; whisper &rarr; glass &rarr; shatter &rarr; peace &rarr; drift &rarr; anchor &rarr; rust &rarr; hidden &rarr; petal &rarr; rain &rarr; roof &rarr; stranger &rarr; door &rarr; threshold &rarr; brave &rarr; quiet &rarr; <span class="current">ideas</span> &rarr; bloom &rarr; ?
   </div>
   <div class="chain-note" id="live-chain-note">One word at a time. Written by everyone. Planned by no one.</div>
 </section>
@@ -492,8 +492,8 @@ footer a:hover { color: #fff; }
   <button class="share-close" id="shareClose">&times;</button>
   <div class="share-card">
     <div class="share-card-date" id="share-date">Day 1</div>
-    <div class="share-card-word" id="share-word">Today's word: hidden</div>
-    <div class="share-card-text" id="share-text">"The hidden door opened both ways."</div>
+    <div class="share-card-word" id="share-word">Today's word: bloom</div>
+    <div class="share-card-text" id="share-text">"Ideas bloom best when shared freely."</div>
     <div class="share-card-meta"><span class="heart">&#9829;</span> <span id="share-hearts">203</span></div>
     <div class="share-card-brand">quipd.</div>
     <a href="#download" class="share-card-cta" id="share-cta">Say it in six</a>
@@ -513,7 +513,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.15 });
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-  // Fade in the "hidden" word in step 1
+  // Fade in the "bloom" word in step 1
   const howWord = document.getElementById("how-word");
   if (howWord) {
     const wordObserver = new IntersectionObserver((entries) => {
