@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quipd — Say it in six.</title>
 <meta name="description" content="One word appears every day. Write exactly six words using it. See how everyone else said it. The most-loved response breeds tomorrow's word.">
+<link rel="canonical" href="https://quipd.app/">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Quipd — Say it in six.">
@@ -24,6 +25,25 @@
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="images/AppIcon-60.png">
 <link rel="apple-touch-icon" href="images/AppIcon-180.png">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Quipd",
+  "description": "A daily creative writing app. One word appears every day. Write exactly six words using it. The most-loved response breeds tomorrow's word.",
+  "applicationCategory": "EntertainmentApplication",
+  "operatingSystem": "iOS",
+  "url": "https://quipd.app",
+  "downloadUrl": "https://apps.apple.com/app/id6761245212",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <!-- Fonts (self-hosted) -->
 <style>
@@ -151,15 +171,12 @@ body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); 
 .hero-cta:hover { transform: translateY(-2px); }
 .hero-cta-secondary { background: var(--ink-surface); color: var(--muted-dark); border: 1px solid rgba(255,255,255,0.12); }
 .hero-cta-secondary:hover { color: #fff; border-color: rgba(255,255,255,0.2); }
-.coming-soon-badge {
-  display: inline-block; padding: 12px 28px; border-radius: 8px;
-  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-  color: var(--muted-dark); font-size: 14px; font-weight: 500;
-  letter-spacing: 0.5px;
+.app-store-badge {
+  display: inline-block; transition: transform 0.2s, opacity 0.2s;
 }
-.coming-soon-badge-lg {
-  padding: 16px 36px; font-size: 16px; border-radius: 10px;
-}
+.app-store-badge:hover { transform: translateY(-2px); opacity: 0.9; }
+.app-store-badge img { height: 44px; width: auto; }
+.app-store-badge-lg img { height: 54px; }
 
 .hero-bottom {
   padding: 28px 48px; display: flex; justify-content: center; gap: 56px;
@@ -366,6 +383,7 @@ footer a:hover { color: #fff; }
     <a href="/" class="hero-logo">quipd<span class="dot">.</span></a>
     <nav class="hero-nav">
       <a href="#how">How it works</a>
+      <a href="https://apps.apple.com/app/id6761245212" class="hero-nav-cta">Download</a>
     </nav>
   </div>
 
@@ -375,7 +393,9 @@ footer a:hover { color: #fff; }
     <p class="hero-sub">The most-loved response breeds tomorrow's word.<br>The chain grows forever.</p>
     <div class="hero-tagline">Written by everyone. Planned by no one.</div>
     <div class="hero-cta-row">
-      <span class="coming-soon-badge">Coming Soon</span>
+      <a href="https://apps.apple.com/app/id6761245212" class="app-store-badge">
+        <img src="images/app-store-badge.svg" alt="Download on the App Store">
+      </a>
       <a href="#how" class="hero-cta hero-cta-secondary">How it works</a>
     </div>
   </div>
@@ -473,7 +493,9 @@ footer a:hover { color: #fff; }
 <section class="final-cta" id="download">
   <div class="final-cta-headline">What will you say?</div>
   <div class="final-cta-sub">Free. One word per day. Forever.</div>
-  <span class="coming-soon-badge coming-soon-badge-lg">Coming Soon</span>
+  <a href="https://apps.apple.com/app/id6761245212" class="app-store-badge app-store-badge-lg">
+    <img src="images/app-store-badge.svg" alt="Download on the App Store">
+  </a>
 </section>
 
 <!-- ==================== FOOTER ==================== -->
@@ -496,7 +518,7 @@ footer a:hover { color: #fff; }
     <div class="share-card-text" id="share-text">"Ideas bloom best when shared freely."</div>
     <div class="share-card-meta"><span class="heart">&#9829;</span> <span id="share-hearts">203</span></div>
     <div class="share-card-brand">quipd.</div>
-    <a href="#download" class="share-card-cta" id="share-cta">Say it in six</a>
+    <a href="https://apps.apple.com/app/id6761245212" class="share-card-cta" id="share-cta">Download Quipd</a>
   </div>
 </div>
 
