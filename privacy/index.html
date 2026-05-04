@@ -63,14 +63,16 @@ footer a { color: var(--sage); text-decoration: none; }
 <p>Quipd is designed with privacy in mind. We collect the minimum data necessary to operate and do not require accounts, logins, or personal information.</p>
 
 <h2>What we collect</h2>
-<p>When you submit a response, we store:</p>
+<p>When you submit a public response, we store:</p>
 <ul>
   <li>Your six-word text</li>
   <li>The daily word it responds to</li>
   <li>The date of submission</li>
+  <li>Your mood tag (if selected)</li>
   <li>A heart count</li>
   <li>An anonymous device token (a random UUID)</li>
 </ul>
+<p>Private journal entries are stored locally on your device and in your personal iCloud account. They are not uploaded to our public database and are never visible to us or other users.</p>
 <p>We do <strong>not</strong> collect:</p>
 <ul>
   <li>Your name, email, or phone number</li>
@@ -108,7 +110,8 @@ footer a { color: var(--sage); text-decoration: none; }
 <h2>Data retention</h2>
 <p>Quipd retains data as follows:</p>
 <ul>
-  <li><strong>Non-winning responses:</strong> Automatically deleted after 48 hours</li>
+  <li><strong>Private entries:</strong> Stored on your device and in your personal iCloud account indefinitely, under your control</li>
+  <li><strong>Non-winning public responses:</strong> Automatically deleted after 48 hours</li>
   <li><strong>Winning responses:</strong> Preserved indefinitely as part of the word chain history (the response text, word, and heart count are kept; no personal data is included)</li>
   <li><strong>Hearts:</strong> Deleted when the associated response is deleted</li>
   <li><strong>Word chain history:</strong> Kept indefinitely (contains words and winning response text only)</li>
