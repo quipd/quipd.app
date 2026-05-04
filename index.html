@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quipd — Say it in six.</title>
-<meta name="description" content="One word appears every day. Write exactly six words using it. See how everyone else said it. The most-loved response breeds tomorrow's word.">
+<title>Quipd — Daily journal, mood tracking</title>
+<meta name="description" content="A daily six-word journal with mood tracking. One word appears every day. Write exactly six words using it. Keep it private or share with the community.">
 <link rel="canonical" href="https://quipd.app/">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Quipd — Say it in six.">
-<meta property="og:description" content="A daily creative ritual. One word. Six words. Every day.">
+<meta property="og:title" content="Quipd — Daily journal, mood tracking">
+<meta property="og:description" content="A daily six-word journal. One word. Six words. Every day.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://quipd.app">
 <meta property="og:image" content="https://quipd.app/og-image.png">
@@ -18,8 +18,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Quipd — Say it in six.">
-<meta name="twitter:description" content="A daily creative ritual. One word. Six words. Every day.">
+<meta name="twitter:title" content="Quipd — Daily journal, mood tracking">
+<meta name="twitter:description" content="A daily six-word journal. One word. Six words. Every day.">
 <meta name="twitter:image" content="https://quipd.app/og-image.png">
 
 <!-- Favicon -->
@@ -32,8 +32,8 @@
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "Quipd",
-  "description": "A daily creative writing app. One word appears every day. Write exactly six words using it. The most-loved response breeds tomorrow's word.",
-  "applicationCategory": "EntertainmentApplication",
+  "description": "A daily six-word journal with mood tracking. One word appears every day. Write exactly six words using it. Keep it private or share with the community.",
+  "applicationCategory": "LifestyleApplication",
   "operatingSystem": "iOS",
   "url": "https://quipd.app",
   "downloadUrl": "https://apps.apple.com/app/id6761245212",
@@ -264,6 +264,32 @@ body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); 
   display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted-dark);
 }
 .how-visual-heart .h { color: var(--terra); }
+.how-visual-mood {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+}
+.how-visual-mood span {
+  font-size: 28px; opacity: 0.6; transition: opacity 0.2s, transform 0.2s;
+}
+.how-visual-mood span:hover { opacity: 1; transform: scale(1.2); }
+.how-visual-mood span.active { opacity: 1; }
+.how-visual-journal {
+  text-align: left; width: 100%;
+}
+.how-visual-journal-entry {
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.how-visual-journal-entry:last-child { border-bottom: none; }
+.how-visual-journal-date {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted-dark);
+  letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;
+}
+.how-visual-journal-text {
+  font-family: 'Caveat', cursive; font-size: 20px; color: #fff; margin-bottom: 4px;
+}
+.how-visual-journal-meta {
+  font-size: 12px; color: var(--muted-dark); display: flex; gap: 12px; align-items: center;
+}
+.how-visual-journal-mood { font-size: 14px; }
 
 /* ========== CHAIN ========== */
 .chain-section { padding: 100px 48px; text-align: center; background: var(--cream); }
@@ -274,6 +300,21 @@ body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); 
 }
 .chain-display .current { color: var(--sage); font-weight: 500; }
 .chain-note { font-size: 14px; color: var(--muted); }
+
+/* ========== FEATURES ========== */
+.features-section { padding: 100px 48px; }
+.features-grid {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;
+}
+.feature-card {
+  padding: 32px; background: var(--cream); border-radius: 16px;
+  transition: transform 0.2s;
+}
+.feature-card:hover { transform: translateY(-4px); }
+.feature-icon { font-size: 32px; margin-bottom: 16px; }
+.feature-title { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.feature-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
 /* ========== FINAL CTA ========== */
 .final-cta { padding: 140px 24px; text-align: center; background: var(--ink); color: #fff; }
@@ -351,6 +392,8 @@ footer a:hover { color: #fff; }
   .how-inner { grid-template-columns: 1fr; gap: 32px; }
   .how-visual { min-height: 220px; }
   .chain-section { padding: 64px 24px; }
+  .features-section { padding: 64px 24px; }
+  .features-grid { grid-template-columns: 1fr; gap: 24px; }
   .final-cta { padding: 80px 24px; }
   footer { padding: 28px 24px; }
   .quip-card { grid-template-columns: 1fr; gap: 6px; }
@@ -387,10 +430,10 @@ footer a:hover { color: #fff; }
   </div>
 
   <div class="hero-center">
-    <div class="hero-kicker">A daily creative ritual</div>
+    <div class="hero-kicker">A daily six-word journal</div>
     <h1 class="hero-headline">Say it<br>in <em>six</em>.</h1>
-    <p class="hero-sub">The most-loved response breeds tomorrow's word.<br>The chain grows forever.</p>
-    <div class="hero-tagline">Written by everyone. Planned by no one.</div>
+    <p class="hero-sub">One word arrives every day. Write six words using it.<br>Keep it private or share with the world.</p>
+    <div class="hero-tagline">Your journal. Your words. Your mood.</div>
     <div class="hero-cta-row">
       <a href="https://apps.apple.com/app/id6761245212" class="app-store-badge">
         <img src="images/app-store-badge.svg" alt="Download on the App Store">
@@ -402,27 +445,17 @@ footer a:hover { color: #fff; }
   <div class="hero-bottom" id="hero-bottom">
     <div class="hero-stat">
       <div class="hero-stat-num">One word</div>
-      <div class="hero-stat-label">appears every day</div>
+      <div class="hero-stat-label">arrives every morning</div>
     </div>
     <div class="hero-stat">
       <div class="hero-stat-num">Six words</div>
-      <div class="hero-stat-label">to say what you mean</div>
+      <div class="hero-stat-label">to capture your thought</div>
     </div>
     <div class="hero-stat">
       <div class="hero-stat-num">Every day</div>
-      <div class="hero-stat-label">the chain grows</div>
+      <div class="hero-stat-label">build your streak</div>
     </div>
   </div>
-</section>
-
-<!-- ==================== SHOWCASE (hidden until CloudKit has real responses) ==================== -->
-<section class="showcase" id="showcase" style="display:none">
-  <div class="section-label">Today's word</div>
-  <div class="showcase-word-row">
-    <div class="showcase-word" id="live-word"></div>
-    <div class="showcase-source" id="live-source"></div>
-  </div>
-  <div id="live-quips"></div>
 </section>
 
 <!-- ==================== HOW IT WORKS ==================== -->
@@ -432,7 +465,7 @@ footer a:hover { color: #fff; }
       <div>
         <div class="how-num">01</div>
         <div class="how-title">A word appears</div>
-        <div class="how-desc">Every day at <span class="tip" data-tip="Midnight UTC / GMT">midnight</span>, a new word drops. It wasn't chosen by a person — it emerged from yesterday's most-loved response. The community writes its own prompts, without knowing it.</div>
+        <div class="how-desc">Every day at <span class="tip" data-tip="Midnight UTC / GMT">midnight</span>, a new word arrives. Use it as your prompt. Today's word might be "bloom" or "silence" or "carry" — a single word to spark six.</div>
       </div>
       <div class="how-visual">
         <div class="how-visual-word" id="how-word">bloom</div>
@@ -446,15 +479,14 @@ footer a:hover { color: #fff; }
         <div>
           <div class="how-visual-quip">"Ideas <span class="hl">bloom</span> best<br>when shared freely."</div>
           <div class="how-visual-hearts">
-            <div class="how-visual-heart"><span class="h">&#9829;</span> 203</div>
-            <div class="how-visual-heart" style="color:rgba(255,255,255,0.3)">4h ago</div>
+            <div class="how-visual-heart" style="color:rgba(255,255,255,0.5)">Private or public — your choice</div>
           </div>
         </div>
       </div>
       <div>
         <div class="how-num">02</div>
         <div class="how-title">Write six words</div>
-        <div class="how-desc">Use the daily word in exactly six words. Not five. Not seven. The constraint is the creativity — every single word has to earn its place.</div>
+        <div class="how-desc">Use the daily word in exactly six words. Not five. Not seven. The constraint is the creativity — every word has to earn its place. Keep it private in your journal, or share it with the community.</div>
       </div>
     </div>
   </section>
@@ -463,8 +495,57 @@ footer a:hover { color: #fff; }
     <div class="how-inner reveal">
       <div>
         <div class="how-num">03</div>
+        <div class="how-title">Tag your mood</div>
+        <div class="how-desc">After each entry, tag how you're feeling. Calm. Restless. Grateful. Heavy. Hopeful. Numb. Watch your moods paint a picture on your calendar over time. Skip if you prefer — it's always optional.</div>
+      </div>
+      <div class="how-visual">
+        <div class="how-visual-mood">
+          <span>😌</span>
+          <span>😤</span>
+          <span class="active">🙏</span>
+          <span>😔</span>
+          <span>🌱</span>
+          <span>😶</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="how-inner reveal">
+      <div class="how-visual">
+        <div class="how-visual-journal">
+          <div class="how-visual-journal-entry">
+            <div class="how-visual-journal-date">Today · bloom</div>
+            <div class="how-visual-journal-text">Ideas bloom best when shared freely.</div>
+            <div class="how-visual-journal-meta"><span>🔒 Private</span><span class="how-visual-journal-mood">🙏</span></div>
+          </div>
+          <div class="how-visual-journal-entry">
+            <div class="how-visual-journal-date">Yesterday · wild</div>
+            <div class="how-visual-journal-text">Wild hearts never ask permission first.</div>
+            <div class="how-visual-journal-meta"><span style="color:var(--terra);">♥ 23</span><span class="how-visual-journal-mood">😤</span></div>
+          </div>
+          <div class="how-visual-journal-entry">
+            <div class="how-visual-journal-date">2 days ago · grow</div>
+            <div class="how-visual-journal-text">Watch yourself grow through the pain.</div>
+            <div class="how-visual-journal-meta"><span>🔒 Private</span><span class="how-visual-journal-mood">🌱</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="how-num">04</div>
+        <div class="how-title">Build your journal</div>
+        <div class="how-desc">Your entries become a personal archive. View them by day, browse your mood calendar, share beautiful cards. Write multiple entries per day — unlimited private, one public. Your journal grows, one word at a time.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="how-inner reveal">
+      <div>
+        <div class="how-num">05</div>
         <div class="how-title">The chain grows</div>
-        <div class="how-desc">Heart your favourites. At midnight, the <span class="tip" data-tip="If the top response doesn't have a usable word, we try the next one, and so on">winning response</span> — the one with the most hearts — gives birth to tomorrow's word. We take the last <span class="tip" data-tip="Common words like 'the', 'and', 'is' are skipped">meaningful word</span> from it, make sure it hasn't appeared in the past year, and that becomes the next prompt. No editors. No curation. Just the community choosing what resonates. On quiet days when no one writes, we draw from a curated list of evocative words to keep the chain alive. Over weeks and months, it becomes a collective poem that no one planned but everyone wrote.</div>
+        <div class="how-desc">Share publicly to join the community. Heart your favourites. At midnight, the most-loved response breeds tomorrow's word. An endless chain written by everyone, planned by no one. Browse the community feed anytime — swipe through or see the leaderboard.</div>
       </div>
       <div class="how-visual">
         <div class="how-visual-chain">
@@ -478,6 +559,43 @@ footer a:hover { color: #fff; }
     </div>
   </section>
 </div>
+
+<!-- ==================== FEATURES ==================== -->
+<section class="features-section reveal">
+  <div class="section-label" style="text-align:center; margin-bottom: 40px;">Everything you need</div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📝</div>
+      <div class="feature-title">Private journaling</div>
+      <div class="feature-desc">Keep your thoughts to yourself. Your private entries never leave your device.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🌍</div>
+      <div class="feature-title">Community feed</div>
+      <div class="feature-desc">Share publicly and see how everyone else said it. Heart your favourites.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">😌</div>
+      <div class="feature-title">Mood tracking</div>
+      <div class="feature-desc">One-tap mood tags. Watch your emotional patterns emerge on the calendar.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔥</div>
+      <div class="feature-title">Streak calendar</div>
+      <div class="feature-desc">Build your daily writing habit. See your streak grow day by day.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <div class="feature-title">Share cards</div>
+      <div class="feature-desc">Turn your entries into beautiful shareable images with one tap.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📖</div>
+      <div class="feature-title">Word definitions</div>
+      <div class="feature-desc">Tap the daily word to see its definition. Learn something new every day.</div>
+    </div>
+  </div>
+</section>
 
 <!-- ==================== CHAIN ==================== -->
 <section class="chain-section reveal">
@@ -585,9 +703,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-
-
-
-
-
-
