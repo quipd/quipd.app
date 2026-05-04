@@ -301,21 +301,6 @@ body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); 
 .chain-display .current { color: var(--sage); font-weight: 500; }
 .chain-note { font-size: 14px; color: var(--muted); }
 
-/* ========== FEATURES ========== */
-.features-section { padding: 100px 48px; }
-.features-grid {
-  max-width: 1000px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;
-}
-.feature-card {
-  padding: 32px; background: var(--cream); border-radius: 16px;
-  transition: transform 0.2s;
-}
-.feature-card:hover { transform: translateY(-4px); }
-.feature-icon { font-size: 32px; margin-bottom: 16px; }
-.feature-title { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
-.feature-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
-
 /* ========== FINAL CTA ========== */
 .final-cta { padding: 140px 24px; text-align: center; background: var(--ink); color: #fff; }
 .final-cta-headline {
@@ -392,8 +377,7 @@ footer a:hover { color: #fff; }
   .how-inner { grid-template-columns: 1fr; gap: 32px; }
   .how-visual { min-height: 220px; }
   .chain-section { padding: 64px 24px; }
-  .features-section { padding: 64px 24px; }
-  .features-grid { grid-template-columns: 1fr; gap: 24px; }
+
   .final-cta { padding: 80px 24px; }
   footer { padding: 28px 24px; }
   .quip-card { grid-template-columns: 1fr; gap: 6px; }
@@ -559,44 +543,6 @@ footer a:hover { color: #fff; }
     </div>
   </section>
 </div>
-
-<!-- ==================== FEATURES ==================== -->
-<section class="features-section reveal" style="border-top: 1px solid rgba(0,0,0,0.08);">
-  <div class="section-label" style="text-align:center;">Features</div>
-  <div style="text-align:center; margin-bottom: 48px; font-size: 28px; font-weight: 500; letter-spacing: -0.3px;">Everything you need</div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">📝</div>
-      <div class="feature-title">Private journaling</div>
-      <div class="feature-desc">Keep your thoughts to yourself. Your private entries never leave your device.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🌍</div>
-      <div class="feature-title">Community feed</div>
-      <div class="feature-desc">Share publicly and see how everyone else said it. Heart your favourites.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">😌</div>
-      <div class="feature-title">Mood tracking</div>
-      <div class="feature-desc">One-tap mood tags. Watch your emotional patterns emerge on the calendar.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔥</div>
-      <div class="feature-title">Streak calendar</div>
-      <div class="feature-desc">Build your daily writing habit. See your streak grow day by day.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🎨</div>
-      <div class="feature-title">Share cards</div>
-      <div class="feature-desc">Turn your entries into beautiful shareable images with one tap.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📖</div>
-      <div class="feature-title">Word definitions</div>
-      <div class="feature-desc">Tap the daily word to see its definition. Learn something new every day.</div>
-    </div>
-  </div>
-</section>
 
 <!-- ==================== CHAIN ==================== -->
 <section class="chain-section reveal">
